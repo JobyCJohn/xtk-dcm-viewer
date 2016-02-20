@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Joby John">
+    <title>Xtk DCM Viewer</title>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Core XTK JavaScript -->
+    <script type='text/javascript' src='js/xtk.js'></script>
+
+    <!-- Custom JS -->
+    <script type='text/javascript' src='js/jquery.frontpage.js'></script>
+    <script type='text/javascript' src='js/renderer.js'></script>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#toolbarMenu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Xtk DCM Viewer</a>
+    </div>
+    <div class="collapse navbar-collapse" id="toolbarMenu">
+      <ul class="nav navbar-nav">
+        <li>
+          <input id='filebutton' type='file' multiple style='display: none;'></input>
+          <a class="toggle-visibility" id="patientMenuItem" onclick='javascript:document.getElementById("filebutton").click();'>Select Patient</a>
+        </li>
+        <li>
+          <a class="toggle-visibility" id="orthoViewMenuItem" data-target="#3DViewer">Orthogonal</a>
+        </li>
+        <li>
+          <a class="toggle-visibility" id="3DViewMenuItem" data-target="#3DViewer">3D</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="jumbotron special">
+  <div class="container-fluid">
+    <!-- <div class="viewer" id="2DViewer">
+              <p class="viewerLabel">2D View</p>
+            </div> -->
+    <div class="viewer" id="3DViewer">
+      <p class="viewerLabel">Ortho View</p>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>
