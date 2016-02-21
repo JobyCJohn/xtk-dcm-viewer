@@ -19,6 +19,7 @@
     <script type='text/javascript' src='js/xtk.js'></script>
 
     <!-- Custom JS -->
+    <script type='text/javascript' src='js/reader.js'></script>
     <script type='text/javascript' src='js/jquery.frontpage.js'></script>
     <script type='text/javascript' src='js/renderer.js'></script>
 
@@ -46,8 +47,8 @@
     <div class="collapse navbar-collapse" id="toolbarMenu">
       <ul class="nav navbar-nav">
         <li>
-          <input id='filebutton' type='file' multiple style='display: none;'></input>
-          <a class="toggle-visibility" id="patientMenuItem" onclick='javascript:document.getElementById("filebutton").click();'>Select Patient</a>
+          <input id='filesInput' type='file' multiple style='display: none;'></input>
+          <a class="toggle-visibility" id="patientMenuItem" >Select Patient</a>
         </li>
         <li>
           <a class="toggle-visibility" id="orthoViewMenuItem" data-target="#3DViewer">Orthogonal</a>
